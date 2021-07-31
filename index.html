@@ -1,78 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/estilo.css">
-  <title>Agenda</title>
-</head>
-<body>
-  <div class="container h-100 d-flex justify-content-center ">
-  
-  <div class="row">
-       <div class="formagenda col-lg-3 py-4 p-lg-4 border-right-lg">
-       
-       <h3 class="text-white text-center pb-3 mb-4 border-bottom">
-         <span>Cadastrar</span> Conato
-       </h3>
-       <form>
-
-        <div class="mb-4">
-            <label for="nome" class="form-label">Nome</label>
-            <input= required type="text" class="form-control" id="nome">
-        </div>
-
-        <div class="mb-4">
-            <label for="telefone" class="form-label">Telefone</label>
-            <input required type="text" class="form-control" id="telefone">
-        </div>
-
-        <div class="mb-4">
-            <label for="email" class="form-label">E-mail</label>
-            <input required type="email" class="form-control" id="email">
-        </div>
-        
-        <div class="mb-4">
-          <label for="dataNascimento" class="form-label">Data de Nascimento</label>
-          <input type="date" class="form-control" id="dataNascimento" min="" max="">
-      </div>
-
-
-        <button type="button" class="btn btn-block btn-success" onclick="cadastrar()">SALVAR</button>
-    </form>   
-       
-  </div>
-  <div class="agenda-lista col-lg-9 py-3 p-lg-4">
-  
-    <h3 class="text-secondary font-weight-bold text-center pb-3 mb-4 border-bottom">
-      Lista de Contatos
-  </h3>
-  <div class="row">
-    <div class="col-lg-4">
-        <form>
-            <div class="my-3">
-                <input type="text" class="form-control" id="pesquisa" placeholder="Pesquisar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <title>Agenda</title>
+  </head>
+  <body>
+    <div class="container h-100 d-flex justify-content-center">
+      <div class="row">
+        <div class="formagenda col-lg-3 py-4 p-lg-4 border-right-lg">
+          <h3 class="text-white text-center pb-3 mb-4 border-bottom">
+            <span>Cadastrar</span> Conato
+          </h3>
+          <form>
+            <div class="mb-4">
+              <label for="nome" class="form-label">Nome</label>
+              <input = type="text" class="form-control" id="nome" />
             </div>
-        </form>
+
+            <div class="mb-4">
+              <label for="telefone" class="form-label">Telefone</label>
+              <input required type="text" class="form-control" id="telefone" />
+            </div>
+
+            <div class="mb-4">
+              <label for="email" class="form-label">E-mail</label>
+              <input required type="email" class="form-control" id="email" />
+            </div>
+
+            <div class="mb-4">
+              <label for="dataNascimento" class="form-label"
+                >Data de Nascimento</label
+              >
+              <input
+                type="date"
+                class="form-control"
+                id="dataNascimento"
+                min=""
+                max=""
+              />
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-block btn-success"
+              onclick="cadastrar()"
+            >
+              SALVAR
+            </button>
+          </form>
+        </div>
+        <div class="agenda-lista col-lg-9 py-3 p-lg-4">
+          <h3
+            class="
+              text-secondary
+              font-weight-bold
+              text-center
+              pb-3
+              mb-4
+              border-bottom
+            "
+          >
+            Lista de Contatos
+          </h3>
+          <div class="row">
+            <div class="col-lg-4">
+              <form>
+                <div class="my-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="pesquisa"
+                    placeholder="Pesquisar"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row px-4">
+            <div class="col-12 p-0 mb-3">
+              <ul id="lista" class="list-unstyled"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-<div class="row px-4">
-  <div class="col-12 p-0 mb-3">
-      <ul id="lista" class="list-unstyled"></ul>
-  </div>
-</div>
-
-</div>
-
-</div>
-  
-  
-  
-  
-  </div>
-  <script src="./js/script.js"></script>
-</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
